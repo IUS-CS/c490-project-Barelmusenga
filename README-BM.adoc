@@ -1,0 +1,43 @@
+== Section 1 – Motivation for Your App
+The application name is BML Mobile. This app will be designed and implemented to help BML Business Center users to access the mobile version of the website to see business updated info and announcements. The users will also be able to contact the admin and sales department by sending them message from online contact form. Users will also have possibility to login and order a design of various categories of web application BML Business center offers https://bmlcenter.com . The app will be developed using Android Studio Framework and Kotlin as the programming language for Android users. The cross-platform will come later.
+
+== Section 2 – Meeting Minimum Requirements
+
+	=== 2.1 User Interface
+.	The App will work in both landscape and portrait layout. Users will not lose the state of their application or any data when rotating the screen.
+.	When the user launches the application, they will see the welcome screen which will display all the necessary information for different type activities and services provided by BML Business Center.
+.	Users will be provided the possibility to login or register for an account.
+.	The App will have a public view accessible to all users and a private view for each user individual account.
+.	The public view of the application will have a menu which display various pages like home, about, services, contact and articles.
+.	For simplicity, the private or authenticated view will have only an order form to submit orders.
+.	Click here to view UX/UI Design of the App: https://xd.adobe.com/view/68c43fc2-409f-448b-7dd0-064bce647cef-1ef5/
+
+=== 2.2 Data Persistence
+.	The contact form, login form, register form, will be connected to the database so that each submission from these forms will be saved to the database.
+.	Users who request for activities and services from contact and order form will be able to see the list of order once they are logged in.
+.	Users will be able to update their information and order submission and it update in real-time in the database.
+.	Users will be able to delete any order or contact submission that they don’t need.
+
+=== 2.3 Communication
+•	Users will be able to communicate with application once deployed and hosted in a web hosting server and through google play store.
+
+== Section 3 – MVC Breakdown
+	=== 3.1 View Descriptions
+
+	Click here to view UX/UI Design of the App : https://xd.adobe.com/view/68c43fc2-409f-448b-7dd0-064bce647cef-1ef5/
+	The link above is the prototype of my mobile app and contains all the needed diagram for the application.
+
+	=== 3.2 Model Descriptions
+
+•	For this application, I will use SQLite as my database.
+•	In my model, I will have:
+o	Contact class which will store the name, email, phone number, message subject and the message body. This contact form is accessible by any visitor or guest having the app. Data will be stored in the database to keep records of all potential customers, but the body message but also be forwarded to the app admin via email.
+o	Customers class that will handle the registration and login form to authenticate users or potential customers.
+o	Order class that will help record all customer’s orders and save them to the database. The authenticated user will be able to view their order history and status. The Order class will record customers information such as name, email, phone, address and the details of the service ordered such service name and price. 
+o	Article class will contain entities such as title, short description, body, author, date created and updated.
+ 
+	=== 3.3 Controller Descriptions
+	
+	The screen which will be controlled by the controller are showed in the prototype at this link Click here to view UX/UI Design of the App : https://xd.adobe.com/view/68c43fc2-409f-448b-7dd0-064bce647cef-1ef5/ 
+	The controller will control all the views even those which doesn’t have the data stored in the database.
+	The controller will handle the create, update, delete and details method which will interact with the database.
