@@ -1,7 +1,7 @@
-== Section 1 – Motivation for Your App
+== Section 1 – App Motivation
 The application name is BML Mobile. This app will be designed and implemented to help BML Business Center users to access the mobile version of the website to see business updated info and announcements. The users will also be able to contact the admin and sales department by sending them message from online contact form. Users will also have possibility to login and order a design of various categories of web application BML Business center offers https://bmlcenter.com . The app will be developed using Android Studio Framework and Kotlin as the programming language for Android users. The cross-platform will come later.
 
-== Section 2 – Meeting Minimum Requirements
+== Section 2 – Requirements
 
 === 2.1 User Interface
 	1. The App will work in both landscape and portrait layout. Users will not lose the state of their application or any data when rotating the screen.
